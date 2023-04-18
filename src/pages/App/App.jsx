@@ -7,6 +7,8 @@ import LoginPage from '../LoginPage/LoginPage';
 function App() {
 
   const [ user, setUser ] = useState(null)
+
+
   return (
     <div className="App">
       <h1>App</h1>
@@ -17,7 +19,7 @@ function App() {
           </Routes>
         </>
       ) : (
-        < LoginPage />
+        < LoginPage setUser={setUser} />
       )
       }
     </div>
