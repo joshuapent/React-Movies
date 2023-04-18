@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 function MovieDetailPage() {
   return (
-    <div>MovieDetailPage</div>
+    <div> MovieDetailPage</div>
   )
 }
 
