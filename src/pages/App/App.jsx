@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
+import LoginPage from '../LoginPage/LoginPage';
 
 function App() {
 
@@ -10,9 +10,16 @@ function App() {
   return (
     <div className="App">
       <h1>App</h1>
-      <>
-        < NavBar />
-      </>
+      { user ? (
+        <>
+          < NavBar />
+          <Routes>
+          </Routes>
+        </>
+      ) : (
+        < LoginPage />
+      )
+      }
     </div>
   );
 }
