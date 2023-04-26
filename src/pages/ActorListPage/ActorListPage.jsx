@@ -1,5 +1,6 @@
 import React from 'react'
 import ActorCard from '../../components/ActorCard/ActorCard'
+import './ActorListPage.css'
 
 function ActorListPage(props) {
   const castSet = new Set()
@@ -10,7 +11,7 @@ function ActorListPage(props) {
   const totalCast = Array.from(castSet)
   
   return (
-    <div>
+    <div className="actorPage">
       {totalCast.map((actor) => (
         <div className="actor">
           < ActorCard actor={actor}/>

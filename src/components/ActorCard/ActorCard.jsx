@@ -4,9 +4,8 @@ function ActorCard({actor}) {
 
   return (
 
-    <div>
+    <div className="actor-card" style={{backgroundImage: "url('https://picsum.photos/id/200/200')"}}>
         <h1>{actor}</h1>
-        <img src="" alt="" className="MovieCardBG" />
         <br />
     </div>
   )
