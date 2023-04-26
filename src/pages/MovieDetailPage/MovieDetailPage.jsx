@@ -3,8 +3,6 @@ import { useParams } from 'react-router-dom'
 
 function MovieDetailPage({movies}) {
   const { movieName } = useParams();
-  console.log(movieName)
-  console.log(movies)
   return (
     <div>
       { movies.filter(movie => movie.title === movieName).map((movie) => (

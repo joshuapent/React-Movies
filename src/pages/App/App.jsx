@@ -12,7 +12,7 @@ import { movies } from '../../data';
 function App() {
 
   const [ user, setUser ] = useState(null)
-  const { movieName } = useParams();
+
 
 
   return (
@@ -21,9 +21,9 @@ function App() {
         <>
           < NavBar user={user} />
           <Routes>
-            <Route path="/" element={< MoviesListPage movieName={movieName} movies={movies} />} />
+            <Route path="/" element={< MoviesListPage movies={movies} />} />
             <Route path=":movieName" element={< MovieDetailPage movies={movies}/>} />
-            <Route path="/actors" element={< ActorListPage/>} />
+            <Route path="/actors" element={< ActorListPage movies={movies}/>} />
           </Routes>
         </>
       ) : (
