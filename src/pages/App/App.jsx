@@ -22,7 +22,7 @@ function App() {
           < NavBar user={user} />
           <Routes>
             <Route path="/" element={< MoviesListPage movieName={movieName} movies={movies} />} />
-            <Route path="movies/:movieName" element={< MovieDetailPage/>} />
+            <Route path=":movieName" element={< MovieDetailPage movies={movies}/>} />
             <Route path="/actors" element={< ActorListPage/>} />
           </Routes>
         </>
