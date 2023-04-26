@@ -11,10 +11,10 @@ function MovieDetailPage({movies}) {
         <div>
           <h1>{movie.title}</h1>
           <img src={movie.posterPath} alt="" className="MovieCardBG" />
-          <h2>{movie.releaseDate}</h2>
+          <h2>Release Date: {movie.releaseDate}</h2>
+          <h3>Cast: {movie.cast.join(', ')}</h3>
         </div>
       ))}
-        <h1>heyo</h1>
     </div>
   )
 }
